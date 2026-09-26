@@ -1,0 +1,12 @@
+{
+  "label2id": {
+    "business": 0,
+    "politics": 1,
+    "sports": 2
+  },
+  "id2label": {
+    "0": "business",
+    "1": "politics",
+    "2": "sports"
+  }
+}

@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large/reproducible model assets and caches
+*.zip
+*.npy
+*.safetensors
+*.bin
+
+# Hugging Face / model checkpoints
+**/best_model/
+**/embedding_cache/
+
+# GloVe large pretrained files
+**/glove.6B.100d.txt
+**/glove.6B.zip
+
+# Optional Word2Vec saved models
+*.model
+
+# Temporary files
+*.tmp
+*.log
+# Office temporary files
+~$*

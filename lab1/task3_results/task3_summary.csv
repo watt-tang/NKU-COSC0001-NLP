@@ -1,0 +1,2 @@
+﻿Representation,Model,Max Length,Epochs,Batch Size,Learning Rate,Best Epoch,Best Validation Macro-F1,Test Accuracy,Test Macro-F1
+BERT-base-uncased Fine-tuning,google-bert/bert-base-uncased,64,3,8,2e-05,2,0.9477756293185481,0.9835069444444444,0.9627028390958423
