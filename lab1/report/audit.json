@@ -1,0 +1,911 @@
+{
+  "checks": [
+    "Exactly three NYT labels",
+    "Actual script split functions agree in text and label order",
+    "Actual script split functions agree in text and label order",
+    "Split sizes sum to cleaned corpus",
+    "Split row indices are disjoint",
+    "Combined summary method order",
+    "Test texts unique: exact-text reconstruction is unambiguous",
+    "binary_bow: wrong-case texts unique",
+    "binary_bow: all wrong cases belong to exact test split with correct labels",
+    "binary_bow: saved errors are genuine errors",
+    "binary_bow: business precision",
+    "binary_bow: business recall",
+    "binary_bow: business f1-score",
+    "binary_bow: business support",
+    "binary_bow: politics precision",
+    "binary_bow: politics recall",
+    "binary_bow: politics f1-score",
+    "binary_bow: politics support",
+    "binary_bow: sports precision",
+    "binary_bow: sports recall",
+    "binary_bow: sports f1-score",
+    "binary_bow: sports support",
+    "binary_bow: macro avg precision",
+    "binary_bow: macro avg recall",
+    "binary_bow: macro avg f1-score",
+    "binary_bow: macro avg support",
+    "binary_bow: weighted avg precision",
+    "binary_bow: weighted avg recall",
+    "binary_bow: weighted avg f1-score",
+    "binary_bow: weighted avg support",
+    "binary_bow: saved accuracy row",
+    "binary_bow: recomputed test Accuracy matches combined summary",
+    "binary_bow: recomputed test Macro-F1 matches combined summary",
+    "binary_bow: task summary matches",
+    "binary_bow: vocabulary independently recomputed",
+    "binary_bow: validation Accuracy is consistent with integer correct count",
+    "frequency_bow: wrong-case texts unique",
+    "frequency_bow: all wrong cases belong to exact test split with correct labels",
+    "frequency_bow: saved errors are genuine errors",
+    "frequency_bow: business precision",
+    "frequency_bow: business recall",
+    "frequency_bow: business f1-score",
+    "frequency_bow: business support",
+    "frequency_bow: politics precision",
+    "frequency_bow: politics recall",
+    "frequency_bow: politics f1-score",
+    "frequency_bow: politics support",
+    "frequency_bow: sports precision",
+    "frequency_bow: sports recall",
+    "frequency_bow: sports f1-score",
+    "frequency_bow: sports support",
+    "frequency_bow: macro avg precision",
+    "frequency_bow: macro avg recall",
+    "frequency_bow: macro avg f1-score",
+    "frequency_bow: macro avg support",
+    "frequency_bow: weighted avg precision",
+    "frequency_bow: weighted avg recall",
+    "frequency_bow: weighted avg f1-score",
+    "frequency_bow: weighted avg support",
+    "frequency_bow: saved accuracy row",
+    "frequency_bow: recomputed test Accuracy matches combined summary",
+    "frequency_bow: recomputed test Macro-F1 matches combined summary",
+    "frequency_bow: task summary matches",
+    "frequency_bow: vocabulary independently recomputed",
+    "frequency_bow: validation Accuracy is consistent with integer correct count",
+    "nyt_word2vec: wrong-case texts unique",
+    "nyt_word2vec: all wrong cases belong to exact test split with correct labels",
+    "nyt_word2vec: saved errors are genuine errors",
+    "nyt_word2vec: business precision",
+    "nyt_word2vec: business recall",
+    "nyt_word2vec: business f1-score",
+    "nyt_word2vec: business support",
+    "nyt_word2vec: politics precision",
+    "nyt_word2vec: politics recall",
+    "nyt_word2vec: politics f1-score",
+    "nyt_word2vec: politics support",
+    "nyt_word2vec: sports precision",
+    "nyt_word2vec: sports recall",
+    "nyt_word2vec: sports f1-score",
+    "nyt_word2vec: sports support",
+    "nyt_word2vec: macro avg precision",
+    "nyt_word2vec: macro avg recall",
+    "nyt_word2vec: macro avg f1-score",
+    "nyt_word2vec: macro avg support",
+    "nyt_word2vec: weighted avg precision",
+    "nyt_word2vec: weighted avg recall",
+    "nyt_word2vec: weighted avg f1-score",
+    "nyt_word2vec: weighted avg support",
+    "nyt_word2vec: saved accuracy row",
+    "nyt_word2vec: recomputed test Accuracy matches combined summary",
+    "nyt_word2vec: recomputed test Macro-F1 matches combined summary",
+    "nyt_word2vec: task summary matches",
+    "nyt_word2vec: embedding dimension",
+    "nyt_word2vec: validation Accuracy is consistent with integer correct count",
+    "ag_word2vec: wrong-case texts unique",
+    "ag_word2vec: all wrong cases belong to exact test split with correct labels",
+    "ag_word2vec: saved errors are genuine errors",
+    "ag_word2vec: business precision",
+    "ag_word2vec: business recall",
+    "ag_word2vec: business f1-score",
+    "ag_word2vec: business support",
+    "ag_word2vec: politics precision",
+    "ag_word2vec: politics recall",
+    "ag_word2vec: politics f1-score",
+    "ag_word2vec: politics support",
+    "ag_word2vec: sports precision",
+    "ag_word2vec: sports recall",
+    "ag_word2vec: sports f1-score",
+    "ag_word2vec: sports support",
+    "ag_word2vec: macro avg precision",
+    "ag_word2vec: macro avg recall",
+    "ag_word2vec: macro avg f1-score",
+    "ag_word2vec: macro avg support",
+    "ag_word2vec: weighted avg precision",
+    "ag_word2vec: weighted avg recall",
+    "ag_word2vec: weighted avg f1-score",
+    "ag_word2vec: weighted avg support",
+    "ag_word2vec: saved accuracy row",
+    "ag_word2vec: recomputed test Accuracy matches combined summary",
+    "ag_word2vec: recomputed test Macro-F1 matches combined summary",
+    "ag_word2vec: task summary matches",
+    "ag_word2vec: embedding dimension",
+    "ag_word2vec: validation Accuracy is consistent with integer correct count",
+    "glove_100d: wrong-case texts unique",
+    "glove_100d: all wrong cases belong to exact test split with correct labels",
+    "glove_100d: saved errors are genuine errors",
+    "glove_100d: business precision",
+    "glove_100d: business recall",
+    "glove_100d: business f1-score",
+    "glove_100d: business support",
+    "glove_100d: politics precision",
+    "glove_100d: politics recall",
+    "glove_100d: politics f1-score",
+    "glove_100d: politics support",
+    "glove_100d: sports precision",
+    "glove_100d: sports recall",
+    "glove_100d: sports f1-score",
+    "glove_100d: sports support",
+    "glove_100d: macro avg precision",
+    "glove_100d: macro avg recall",
+    "glove_100d: macro avg f1-score",
+    "glove_100d: macro avg support",
+    "glove_100d: weighted avg precision",
+    "glove_100d: weighted avg recall",
+    "glove_100d: weighted avg f1-score",
+    "glove_100d: weighted avg support",
+    "glove_100d: saved accuracy row",
+    "glove_100d: recomputed test Accuracy matches combined summary",
+    "glove_100d: recomputed test Macro-F1 matches combined summary",
+    "glove_100d: task summary matches",
+    "glove_100d: embedding dimension",
+    "glove_100d: validation Accuracy is consistent with integer correct count",
+    "bert_finetune: wrong-case texts unique",
+    "bert_finetune: all wrong cases belong to exact test split with correct labels",
+    "bert_finetune: saved errors are genuine errors",
+    "bert_finetune: business precision",
+    "bert_finetune: business recall",
+    "bert_finetune: business f1-score",
+    "bert_finetune: business support",
+    "bert_finetune: politics precision",
+    "bert_finetune: politics recall",
+    "bert_finetune: politics f1-score",
+    "bert_finetune: politics support",
+    "bert_finetune: sports precision",
+    "bert_finetune: sports recall",
+    "bert_finetune: sports f1-score",
+    "bert_finetune: sports support",
+    "bert_finetune: macro avg precision",
+    "bert_finetune: macro avg recall",
+    "bert_finetune: macro avg f1-score",
+    "bert_finetune: macro avg support",
+    "bert_finetune: weighted avg precision",
+    "bert_finetune: weighted avg recall",
+    "bert_finetune: weighted avg f1-score",
+    "bert_finetune: weighted avg support",
+    "bert_finetune: saved accuracy row",
+    "bert_finetune: recomputed test Accuracy matches combined summary",
+    "bert_finetune: recomputed test Macro-F1 matches combined summary",
+    "bert_finetune: task summary matches",
+    "binary_vs_frequency_disagreement: exact saved disagreement rows",
+    "binary_right_frequency_wrong: exact correctness subset",
+    "frequency_right_binary_wrong: exact correctness subset",
+    "nyt_vs_ag_word2vec_disagreement: exact saved disagreement rows",
+    "nyt_right_ag_wrong: exact correctness subset",
+    "ag_right_nyt_wrong: exact correctness subset",
+    "nyt_word2vec: OOV denominators independently recomputed",
+    "nyt_word2vec: token OOV arithmetic",
+    "nyt_word2vec: type OOV arithmetic",
+    "nyt_word2vec: OOV summaries agree",
+    "ag_word2vec: OOV denominators independently recomputed",
+    "ag_word2vec: token OOV arithmetic",
+    "ag_word2vec: type OOV arithmetic",
+    "ag_word2vec: OOV summaries agree",
+    "glove_100d: OOV denominators independently recomputed",
+    "glove_100d: token OOV arithmetic",
+    "glove_100d: type OOV arithmetic",
+    "glove_100d: OOV summaries agree",
+    "BERT best checkpoint epoch agrees with validation history",
+    "BERT best validation score",
+    "BERT persisted hyperparameters",
+    "Exactly three completed BERT epochs",
+    "BERT label mapping",
+    "binary_bow: business top-20 ranks and descending coefficients",
+    "binary_bow: business words belong to training vocabulary",
+    "binary_bow: politics top-20 ranks and descending coefficients",
+    "binary_bow: politics words belong to training vocabulary",
+    "binary_bow: sports top-20 ranks and descending coefficients",
+    "binary_bow: sports words belong to training vocabulary",
+    "frequency_bow: business top-20 ranks and descending coefficients",
+    "frequency_bow: business words belong to training vocabulary",
+    "frequency_bow: politics top-20 ranks and descending coefficients",
+    "frequency_bow: politics words belong to training vocabulary",
+    "frequency_bow: sports top-20 ranks and descending coefficients",
+    "frequency_bow: sports words belong to training vocabulary",
+    "nyt_word2vec: company neighbor ranks and cosine range",
+    "nyt_word2vec: football neighbor ranks and cosine range",
+    "nyt_word2vec: government neighbor ranks and cosine range",
+    "nyt_word2vec: market neighbor ranks and cosine range",
+    "nyt_word2vec: president neighbor ranks and cosine range",
+    "nyt_word2vec: team neighbor ranks and cosine range",
+    "ag_word2vec: company neighbor ranks and cosine range",
+    "ag_word2vec: football neighbor ranks and cosine range",
+    "ag_word2vec: government neighbor ranks and cosine range",
+    "ag_word2vec: market neighbor ranks and cosine range",
+    "ag_word2vec: president neighbor ranks and cosine range",
+    "ag_word2vec: team neighbor ranks and cosine range",
+    "binary_bow_classification_report.csv: no missing CSV cells",
+    "binary_bow_top_words.csv: no missing CSV cells",
+    "binary_bow_wrong_cases.csv: no missing CSV cells",
+    "binary_right_frequency_wrong.csv: no missing CSV cells",
+    "binary_vs_frequency_disagreement.csv: no missing CSV cells",
+    "frequency_bow_classification_report.csv: no missing CSV cells",
+    "frequency_bow_top_words.csv: no missing CSV cells",
+    "frequency_bow_wrong_cases.csv: no missing CSV cells",
+    "frequency_right_binary_wrong.csv: no missing CSV cells",
+    "task1_summary.csv: no missing CSV cells",
+    "ag_right_nyt_wrong.csv: no missing CSV cells",
+    "ag_word2vec_classification_report.csv: no missing CSV cells",
+    "ag_word2vec_similar_words.csv: no missing CSV cells",
+    "ag_word2vec_wrong_cases.csv: no missing CSV cells",
+    "glove_100d_classification_report.csv: no missing CSV cells",
+    "glove_100d_wrong_cases.csv: no missing CSV cells",
+    "nyt_right_ag_wrong.csv: no missing CSV cells",
+    "nyt_vs_ag_word2vec_disagreement.csv: no missing CSV cells",
+    "nyt_word2vec_classification_report.csv: no missing CSV cells",
+    "nyt_word2vec_similar_words.csv: no missing CSV cells",
+    "nyt_word2vec_wrong_cases.csv: no missing CSV cells",
+    "oov_statistics.csv: no missing CSV cells",
+    "task2_summary.csv: no missing CSV cells",
+    "all_tasks_comparison.csv: no missing CSV cells",
+    "bert_finetune_classification_report.csv: no missing CSV cells",
+    "bert_finetune_wrong_cases.csv: no missing CSV cells",
+    "task3_summary.csv: no missing CSV cells",
+    "training_history.csv: no missing CSV cells"
+  ],
+  "files": [
+    {
+      "path": "task1_results\\binary_bow_classification_report.csv",
+      "sha256": "ead2c62d6874cf9618bb804ac85049e63701e41261022b1da5f6a64e82d763d2",
+      "bytes": 479,
+      "rows": 6,
+      "columns": [
+        "Unnamed: 0",
+        "precision",
+        "recall",
+        "f1-score",
+        "support"
+      ]
+    },
+    {
+      "path": "task1_results\\binary_bow_confusion_matrix.png",
+      "sha256": "8c6b41bba976ebdb943cf1a00124a01f2fc5b7a602be22a14a55d26e5576bb02",
+      "bytes": 41414
+    },
+    {
+      "path": "task1_results\\binary_bow_top_words.csv",
+      "sha256": "103c77f545ebc4dbe32148554d0054d4f1379b6d348f8f3583980a693816943a",
+      "bytes": 2326,
+      "rows": 60,
+      "columns": [
+        "class",
+        "rank",
+        "word",
+        "coefficient"
+      ]
+    },
+    {
+      "path": "task1_results\\binary_bow_wrong_cases.csv",
+      "sha256": "cc195ea37d6986d081dfecaf3e55e846712e17129a8082652b58e79b717e29d6",
+      "bytes": 66868,
+      "rows": 11,
+      "columns": [
+        "text",
+        "true_label",
+        "pred_label"
+      ]
+    },
+    {
+      "path": "task1_results\\binary_right_frequency_wrong.csv",
+      "sha256": "7b0e25646a8b5485d307a5e7efafd4a9c8716d2b31372bc85ee9bd686d636559",
+      "bytes": 24391,
+      "rows": 5,
+      "columns": [
+        "text",
+        "true_label",
+        "binary_pred",
+        "frequency_pred"
+      ]
+    },
+    {
+      "path": "task1_results\\binary_vs_frequency_disagreement.csv",
+      "sha256": "e581a1673642140f6d7ec464e99093ad5a52eed831a60e75eb29670683ea2515",
+      "bytes": 44183,
+      "rows": 10,
+      "columns": [
+        "text",
+        "true_label",
+        "binary_pred",
+        "frequency_pred"
+      ]
+    },
+    {
+      "path": "task1_results\\frequency_bow_classification_report.csv",
+      "sha256": "72aaff2eec420509adc5f1b6ea0e92e957bfb93abea4afa3f5361a28e646dd31",
+      "bytes": 490,
+      "rows": 6,
+      "columns": [
+        "Unnamed: 0",
+        "precision",
+        "recall",
+        "f1-score",
+        "support"
+      ]
+    },
+    {
+      "path": "task1_results\\frequency_bow_confusion_matrix.png",
+      "sha256": "e6775e302eac7c12e01ff5f71c20f8b2e64e06510e85f37faf034465a813450e",
+      "bytes": 43930
+    },
+    {
+      "path": "task1_results\\frequency_bow_top_words.csv",
+      "sha256": "76b86d7868dfd9438726ba3cef71b3373d17a8fdb7aaef32d644879f452306d3",
+      "bytes": 2358,
+      "rows": 60,
+      "columns": [
+        "class",
+        "rank",
+        "word",
+        "coefficient"
+      ]
+    },
+    {
+      "path": "task1_results\\frequency_bow_wrong_cases.csv",
+      "sha256": "7ccea86ac9fb9ae636799e7fbd0dd67f28b2d06482aaf66f6483c0eba466142f",
+      "bytes": 75325,
+      "rows": 12,
+      "columns": [
+        "text",
+        "true_label",
+        "pred_label"
+      ]
+    },
+    {
+      "path": "task1_results\\frequency_right_binary_wrong.csv",
+      "sha256": "be6633c74965d00408bf821bb43e508055257480be0b413471d19ae4ee7dc74e",
+      "bytes": 15929,
+      "rows": 4,
+      "columns": [
+        "text",
+        "true_label",
+        "binary_pred",
+        "frequency_pred"
+      ]
+    },
+    {
+      "path": "task1_results\\task1_summary.csv",
+      "sha256": "cb6f57b1fc837e6e95b4cca8a99fdec91ffdb894eb77ef95465870e696c54957",
+      "bytes": 298,
+      "rows": 2,
+      "columns": [
+        "Representation",
+        "Vocabulary Size",
+        "Validation Accuracy",
+        "Validation Macro-F1",
+        "Test Accuracy",
+        "Test Macro-F1"
+      ]
+    },
+    {
+      "path": "task2_results\\ag_right_nyt_wrong.csv",
+      "sha256": "31b9b3aad260282649623ba3e91e89a2ec79179cc2cbd1495760295a7cbbcd65",
+      "bytes": 10264,
+      "rows": 3,
+      "columns": [
+        "text",
+        "true_label",
+        "nyt_word2vec_pred",
+        "ag_word2vec_pred"
+      ]
+    },
+    {
+      "path": "task2_results\\ag_word2vec_classification_report.csv",
+      "sha256": "f5e47b4db8a936b6144adfded51072440bb087e8e14e89b4593298236fac77cc",
+      "bytes": 481,
+      "rows": 6,
+      "columns": [
+        "Unnamed: 0",
+        "precision",
+        "recall",
+        "f1-score",
+        "support"
+      ]
+    },
+    {
+      "path": "task2_results\\ag_word2vec_confusion_matrix.png",
+      "sha256": "c812bd40b908edef8ca717d7734577d1890993008da896213403a3466d9118ad",
+      "bytes": 43091
+    },
+    {
+      "path": "task2_results\\ag_word2vec_similar_words.csv",
+      "sha256": "942da8cdd49fe7b629fab46a2bc9784acc3fcaa59ea1b596cefdba9927a04c8f",
+      "bytes": 2359,
+      "rows": 60,
+      "columns": [
+        "query",
+        "rank",
+        "similar_word",
+        "similarity"
+      ]
+    },
+    {
+      "path": "task2_results\\ag_word2vec_wrong_cases.csv",
+      "sha256": "e4e143252aa0fd6e98c9aa13dc61549ee4742d0b212ca1adffde53026cde840e",
+      "bytes": 109558,
+      "rows": 23,
+      "columns": [
+        "text",
+        "true_label",
+        "pred_label"
+      ]
+    },
+    {
+      "path": "task2_results\\glove_100d_classification_report.csv",
+      "sha256": "5abe8af76de5e74c1bd06745763af37fbd825fba6c6494b718ecd06682a40362",
+      "bytes": 443,
+      "rows": 6,
+      "columns": [
+        "Unnamed: 0",
+        "precision",
+        "recall",
+        "f1-score",
+        "support"
+      ]
+    },
+    {
+      "path": "task2_results\\glove_100d_confusion_matrix.png",
+      "sha256": "263b141484fde3c2e5c235ce78d5f0d9a0bc601ed004700825d85c4ae5932be2",
+      "bytes": 43800
+    },
+    {
+      "path": "task2_results\\glove_100d_wrong_cases.csv",
+      "sha256": "d580318fce8d61dc7274bea58fe41fc8595187412d9ebb6a4edf79eba149c9ce",
+      "bytes": 92840,
+      "rows": 18,
+      "columns": [
+        "text",
+        "true_label",
+        "pred_label"
+      ]
+    },
+    {
+      "path": "task2_results\\nyt_right_ag_wrong.csv",
+      "sha256": "7929a7bc2fcbec5c56d810e633295aa361e134e9fc89b41296d85aeee6a05c3a",
+      "bytes": 39454,
+      "rows": 11,
+      "columns": [
+        "text",
+        "true_label",
+        "nyt_word2vec_pred",
+        "ag_word2vec_pred"
+      ]
+    },
+    {
+      "path": "task2_results\\nyt_vs_ag_word2vec_disagreement.csv",
+      "sha256": "c99a878780ea4c8c83b4f7a10f9c47e471b6cb31f3526f57124aa0859b6b1ed1",
+      "bytes": 49663,
+      "rows": 14,
+      "columns": [
+        "text",
+        "true_label",
+        "nyt_word2vec_pred",
+        "ag_word2vec_pred"
+      ]
+    },
+    {
+      "path": "task2_results\\nyt_word2vec_classification_report.csv",
+      "sha256": "3f6e31ffe4d61186f13c8457372ee4b3f058b9b958c5988009d446696fdd6b23",
+      "bytes": 494,
+      "rows": 6,
+      "columns": [
+        "Unnamed: 0",
+        "precision",
+        "recall",
+        "f1-score",
+        "support"
+      ]
+    },
+    {
+      "path": "task2_results\\nyt_word2vec_confusion_matrix.png",
+      "sha256": "b39dfa2c5c885b0aa635ab5e6e4b0248cc7abe3083c7097efd3924c6ac22ed40",
+      "bytes": 43597
+    },
+    {
+      "path": "task2_results\\nyt_word2vec_similar_words.csv",
+      "sha256": "ffe2d5dac688c1b1e0b12f7de622c3c4c003b01e20d11d85976f3dd8e4947a78",
+      "bytes": 2360,
+      "rows": 60,
+      "columns": [
+        "query",
+        "rank",
+        "similar_word",
+        "similarity"
+      ]
+    },
+    {
+      "path": "task2_results\\nyt_word2vec_wrong_cases.csv",
+      "sha256": "9380bc0bc0d985c84cd1eefc403950eeb9302f496a1b9162f9f1d2cdaf201ec8",
+      "bytes": 80436,
+      "rows": 15,
+      "columns": [
+        "text",
+        "true_label",
+        "pred_label"
+      ]
+    },
+    {
+      "path": "task2_results\\oov_statistics.csv",
+      "sha256": "160ee8aa1a21ca0adc4e2b0b139d398f955fe962b2cbe8f9dd10c0f8cbeee58d",
+      "bytes": 334,
+      "rows": 3,
+      "columns": [
+        "Representation",
+        "Total Tokens",
+        "OOV Tokens",
+        "Token OOV Rate",
+        "Unique Words",
+        "Unique OOV Words",
+        "Unique OOV Rate"
+      ]
+    },
+    {
+      "path": "task2_results\\task2_summary.csv",
+      "sha256": "7ed431014cb01103873bad8e6b8c61027571ce2f9e2d7c585f303cf2d2a606a1",
+      "bytes": 523,
+      "rows": 3,
+      "columns": [
+        "Representation",
+        "Dimension",
+        "Validation Accuracy",
+        "Validation Macro-F1",
+        "Test Accuracy",
+        "Test Macro-F1",
+        "Token OOV Rate",
+        "Unique Word OOV Rate"
+      ]
+    },
+    {
+      "path": "task3_results\\all_tasks_comparison.csv",
+      "sha256": "24637d4bee4ab1ff46c61a87b502cc58bb99d5e6b410488a057607478d8b6a96",
+      "bytes": 423,
+      "rows": 6,
+      "columns": [
+        "Task",
+        "Representation",
+        "Test Accuracy",
+        "Test Macro-F1"
+      ]
+    },
+    {
+      "path": "task3_results\\bert_finetune_classification_report.csv",
+      "sha256": "a86f8239fca8df73f32a14f97a47055d0778ca47c95f08180a023561a7ed2169",
+      "bytes": 493,
+      "rows": 6,
+      "columns": [
+        "Unnamed: 0",
+        "precision",
+        "recall",
+        "f1-score",
+        "support"
+      ]
+    },
+    {
+      "path": "task3_results\\bert_finetune_confusion_matrix.png",
+      "sha256": "57ad6a1f9afa5e14e70fd633e34078789ba3f85a4c1eeb899d94e11cd37b8200",
+      "bytes": 43119
+    },
+    {
+      "path": "task3_results\\bert_finetune_wrong_cases.csv",
+      "sha256": "dfff3846d90c8affc1eb35eb42086a690a55ae2d09e49a615a36664048d833f5",
+      "bytes": 106032,
+      "rows": 19,
+      "columns": [
+        "text",
+        "true_label",
+        "bert_pred"
+      ]
+    },
+    {
+      "path": "task3_results\\label_mapping.json",
+      "sha256": "6e5033d0edffc69306bae717fc11cad492c4abed652f50093b24c0852c800625",
+      "bytes": 169
+    },
+    {
+      "path": "task3_results\\task3_summary.csv",
+      "sha256": "392d89f9445842ccffe4f5d7e3268e693a5bd0c16f835519ae31471fd6861811",
+      "bytes": 265,
+      "rows": 1,
+      "columns": [
+        "Representation",
+        "Model",
+        "Max Length",
+        "Epochs",
+        "Batch Size",
+        "Learning Rate",
+        "Best Epoch",
+        "Best Validation Macro-F1",
+        "Test Accuracy",
+        "Test Macro-F1"
+      ]
+    },
+    {
+      "path": "task3_results\\training_history.csv",
+      "sha256": "85aa73b5d5fca4cee3cf97b55c6862194f76c8149f647fd4f9b7ebf2adf8034f",
+      "bytes": 391,
+      "rows": 3,
+      "columns": [
+        "Epoch",
+        "Train Loss",
+        "Validation Loss",
+        "Validation Accuracy",
+        "Validation Macro-F1",
+        "Epoch Time Seconds"
+      ]
+    }
+  ],
+  "limitations": [
+    "No training, checkpoint inference or embedding retraining was performed.",
+    "OOV numerators are checked against saved counts; embedding files are absent, so membership cannot be independently recomputed.",
+    "Validation predictions are absent; validation Macro-F1 can only be cross-checked across saved summaries.",
+    "BERT length 64 includes special tokens; no exact WordPiece truncation rate is inferred from word counts.",
+    "Single seed/run; numerical ranking is not evidence of statistical significance."
+  ],
+  "data": {
+    "raw": 11519,
+    "clean": 11519,
+    "removed": 0,
+    "counts": {
+      "sports": 8639,
+      "politics": 1451,
+      "business": 1429
+    },
+    "splits": {
+      "train": {
+        "n": 9215,
+        "counts": {
+          "sports": 6911,
+          "politics": 1161,
+          "business": 1143
+        }
+      },
+      "validation": {
+        "n": 1152,
+        "counts": {
+          "sports": 864,
+          "politics": 145,
+          "business": 143
+        }
+      },
+      "test": {
+        "n": 1152,
+        "counts": {
+          "sports": 864,
+          "politics": 145,
+          "business": 143
+        }
+      }
+    },
+    "duplicate_texts": 72,
+    "cross_split_duplicate_texts": {
+      "train_val": 14,
+      "train_test": 10,
+      "val_test": 1
+    },
+    "ag": {
+      "rows": 90000,
+      "columns": [
+        "text"
+      ],
+      "nonempty": 90000
+    },
+    "word2vec_corpora": {
+      "nyt_train": {
+        "tokens": 5973837,
+        "vocabulary_min_count_2": 41838
+      },
+      "ag": {
+        "tokens": 3446946,
+        "vocabulary_min_count_2": 35660
+      }
+    },
+    "bow_vocabulary": 60980
+  },
+  "binary_vs_frequency_disagreement": {
+    "total": 10,
+    "a_right_b_wrong": 5,
+    "b_right_a_wrong": 4,
+    "both_wrong": 1
+  },
+  "nyt_vs_ag_word2vec_disagreement": {
+    "total": 14,
+    "a_right_b_wrong": 11,
+    "b_right_a_wrong": 3,
+    "both_wrong": 0
+  },
+  "bert_epoch_seconds": 7703.657661676407,
+  "metrics": {
+    "Binary BoW": {
+      "accuracy": 0.9904513888888888,
+      "macro_f1": 0.9763833014698382,
+      "errors": 11,
+      "confusion_matrix": [
+        [
+          137,
+          5,
+          1
+        ],
+        [
+          4,
+          140,
+          1
+        ],
+        [
+          0,
+          0,
+          864
+        ]
+      ]
+    },
+    "Frequency BoW": {
+      "accuracy": 0.9895833333333334,
+      "macro_f1": 0.974178478192,
+      "errors": 12,
+      "confusion_matrix": [
+        [
+          140,
+          2,
+          1
+        ],
+        [
+          8,
+          137,
+          0
+        ],
+        [
+          1,
+          0,
+          863
+        ]
+      ]
+    },
+    "NYT W2V": {
+      "accuracy": 0.9869791666666666,
+      "macro_f1": 0.9672144370527849,
+      "errors": 15,
+      "confusion_matrix": [
+        [
+          137,
+          5,
+          1
+        ],
+        [
+          8,
+          137,
+          0
+        ],
+        [
+          1,
+          0,
+          863
+        ]
+      ]
+    },
+    "AG W2V": {
+      "accuracy": 0.9800347222222222,
+      "macro_f1": 0.9516985578673042,
+      "errors": 23,
+      "confusion_matrix": [
+        [
+          135,
+          7,
+          1
+        ],
+        [
+          11,
+          133,
+          1
+        ],
+        [
+          3,
+          0,
+          861
+        ]
+      ]
+    },
+    "GloVe": {
+      "accuracy": 0.984375,
+      "macro_f1": 0.9633331673224098,
+      "errors": 18,
+      "confusion_matrix": [
+        [
+          136,
+          6,
+          1
+        ],
+        [
+          7,
+          138,
+          0
+        ],
+        [
+          2,
+          2,
+          860
+        ]
+      ]
+    },
+    "BERT": {
+      "accuracy": 0.9835069444444444,
+      "macro_f1": 0.9627028390958423,
+      "errors": 19,
+      "confusion_matrix": [
+        [
+          131,
+          10,
+          2
+        ],
+        [
+          2,
+          141,
+          2
+        ],
+        [
+          1,
+          2,
+          861
+        ]
+      ]
+    }
+  },
+  "train_test_overlap_diagnostic": {
+    "overlap_n": 10,
+    "remaining_n": 1142,
+    "methods": {
+      "Binary BoW": {
+        "overlap_correct": 10,
+        "remaining_accuracy": 0.9903677758318739,
+        "remaining_macro_f1": 0.9759717411622408
+      },
+      "Frequency BoW": {
+        "overlap_correct": 10,
+        "remaining_accuracy": 0.989492119089317,
+        "remaining_macro_f1": 0.9737415537477672
+      },
+      "NYT W2V": {
+        "overlap_correct": 10,
+        "remaining_accuracy": 0.9868651488616462,
+        "remaining_macro_f1": 0.9666586884016258
+      },
+      "AG W2V": {
+        "overlap_correct": 10,
+        "remaining_accuracy": 0.9798598949211909,
+        "remaining_macro_f1": 0.9508779391204255
+      },
+      "GloVe": {
+        "overlap_correct": 10,
+        "remaining_accuracy": 0.9842381786339754,
+        "remaining_macro_f1": 0.9627123195306653
+      },
+      "BERT": {
+        "overlap_correct": 10,
+        "remaining_accuracy": 0.9833625218914186,
+        "remaining_macro_f1": 0.9620699988997515
+      }
+    }
+  },
+  "source_sha256": {
+    "nyt.csv": "de12ebe7f41316b798896bf975da840e2998f82393328d375fe5456a14e9eb2d",
+    "ag.csv": "06fa7de72a2f1cb41513c35260964518d029ff63ae631a807d3b189fbf246c4b",
+    "task1_bow.py": "5c10f87c5af223b3d2092e397df95453b6569b68145b379fb82e70b38946bbbf",
+    "task2_word2vec.py": "54b8aba1a8c404b1d018ae7fb3ef754e78ae8999b1244894b96a537245dde225",
+    "task3_bert.py": "ec648009a3989c847f3bb1c5e270064efc901971c5039e97588c8639f59853cf",
+    "lab1_2412103_唐健_实验报告.md": "250a0ee6517c7d403afdc50646d83451a00d4c4d20188850166c11f7cb26da9c"
+  },
+  "word_lengths": {
+    "median": 696.5,
+    "min": 56,
+    "max": 5280
+  }
+}
