@@ -48,7 +48,22 @@ NKU-COSC0001-NLP/
 ├── README.md
 ├── .gitignore
 └── lab1/
+    ├── code/           # 实验脚本、数据、结果、作业要求及相关资源
+    └── report/         # 最新报告 PDF、LaTeX 源码与绘图/审计工具
 ```
+
+Lab 1 请阅读 [最新报告 PDF](lab1/report/report.pdf)。旧版 Markdown 与 PDF 报告已从当前仓库目录删除。
+
+在 `lab1/code/` 中运行实验脚本，数据和结果路径保持相对于脚本目录：
+
+```bash
+cd lab1/code
+python task1_bow.py
+python task2_word2vec.py
+python task3_bert.py
+```
+
+报告的重新绘图与编译方法见 [报告说明](lab1/report/README.md)；重新绘图不需要重新训练模型。
 
 > 预训练模型权重、GloVe 大文件、Embedding Cache 等可重新下载或生成的大文件不上传到 Git 仓库。
 

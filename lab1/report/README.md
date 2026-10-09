@@ -2,6 +2,8 @@
 
 阅读成品：`report.pdf`。论文源码：`main.tex`；英文文献：`references.bib`。
 
+`lab1/` 仅有 `code/` 与 `report/` 两个目录。实验脚本、原始数据、`task*_results/` 和其他实验资源位于 `../code/`；绘图及检查脚本已按此路径读取数据。旧版 Markdown/PDF 报告已删除，最新提交报告统一为本目录的 `report.pdf`。
+
 ## 重生成图与数据审计
 
 从任意工作目录执行（Windows 当前可用环境）：
@@ -29,7 +31,7 @@ xelatex -interaction=nonstopmode -halt-on-error -jobname=report main.tex
 
 ## 官方模板与文献来源
 
-- `acl.sty`、`acl_natbib.bst`、`acl_official_example.tex`：直接下载自 [ACL 官方样式仓库](https://github.com/acl-org/acl-style-files)，2026-10-09 获取；样式文件保持原样。使用 `preprint` 选项展示作者与页码。
+- `acl.sty`、`acl_natbib.bst`：直接下载自 [ACL 官方样式仓库](https://github.com/acl-org/acl-style-files)，2026-10-09 获取；样式文件保持原样。使用 `preprint` 选项展示作者与页码。
 - BERT、GloVe、传统文本分类基线的书目信息来自 [ACL Anthology](https://aclanthology.org/)，Word2Vec 来自 [arXiv:1301.3781](https://arxiv.org/abs/1301.3781)。`references.bib` 为精简的四条英文文献。
 - 本文采用 ACL 双栏模板及中文字体适配，视觉参考紧凑学术论文；不是会议投稿合规声明。
 

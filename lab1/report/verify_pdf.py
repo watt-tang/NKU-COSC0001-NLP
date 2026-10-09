@@ -12,6 +12,7 @@ import pymupdf
 from PIL import Image, ImageDraw
 
 HERE = Path(__file__).resolve().parent
+CODE = HERE.parent / 'code'
 QA = HERE / 'qa'
 QA.mkdir(exist_ok=True)
 doc = pymupdf.open(HERE / 'report.pdf')
@@ -32,13 +33,13 @@ assert font_rows and all(re.search(r'yes\s+yes\s+yes\s+\d+\s+\d+\s*$',line) for 
 source_audit = json.loads((HERE/'audit.json').read_text(encoding='utf-8'))
 missing_sources = []
 for name,expected in source_audit['source_sha256'].items():
-    source = HERE.parent/name
+    source = CODE/name
     if not source.exists():
         missing_sources.append(name)
         continue
     assert hashlib.sha256(source.read_bytes()).hexdigest()==expected, f'Source file changed: {name}'
 for entry in source_audit['files']:
-    assert hashlib.sha256((HERE.parent/entry['path']).read_bytes()).hexdigest()==entry['sha256'], f'Result file changed: {entry["path"]}'
+    assert hashlib.sha256((CODE/entry['path']).read_bytes()).hexdigest()==entry['sha256'], f'Result file changed: {entry["path"]}'
 review = {'pages':len(doc),'cjk_characters':len(re.findall(r'[\u4e00-\u9fff]',text)),
     'all_fonts_embedded':True,'unresolved_references':False,'overfull_boxes':False,
     'present_original_source_hashes_unchanged':True,
